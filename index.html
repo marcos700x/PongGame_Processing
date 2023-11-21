@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="PONG.js" defer></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .clockContainer{
+      user-select: none;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: black;
+      color: red;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+    .contenedorIndicadores{
+      width: 1080px;
+      display: flex;
+      gap: 10px;
+      padding: 7.5px;
+    }
+    .powerUpIndicatorP1{
+      height: 18px;
+      width: 50%;
+      transition: all .3s ease;
+      transform-origin: left;
+      transform: scaleX(0);
+      border-radius: 50px;
+      
+    }
+    .powerUpIndicatorP2{
+      height: 18px;
+      width: 50%;
+      transition: all .3s ease;
+      transition: all .3s ease;
+      transform-origin: right;
+      transform: scaleX(0);
+      border-radius: 50px;
+
+    }
+ 
+  </style>
+</head>
+
+<body>
+  <div class="clockContainer">0:00</div>
+  <div class="contenedorIndicadores">
+    <div class="powerUpIndicatorP1"></div>
+    <div class="powerUpIndicatorP2"></div>
+  </div>
+</body>
+</html>
